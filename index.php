@@ -8,7 +8,10 @@
   <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
 </head>
 <body>
-    <?php include "preferences.php" ?>
+    <?php 
+        include "preferences.php";
+        include "main.php"
+    ?>
   <div data-role="page" id="mainPage">
     <?php include "menu.php" ?>  
 
