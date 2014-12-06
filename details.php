@@ -2,8 +2,10 @@
     <?php include "menu.php" ?>  
 
     <div data-role="main" class="ui-content" id="details_content">
-        <img id="headerImage" src="" alt="restaurant" />
-        <img id="restaurantRating" src="" alt="rating" />
+        <img id="headerImage" src="" alt="restaurant" /><br />
+        <img id="restaurantRating" src="" alt="rating" /><br />
+        <a href="" id="phoneNum"></a><br />
+        <a href="" id="yelpLink">Visit at the Yelp website.</a>
         <p id="userComment"></p>
     </div>
 
@@ -63,7 +65,10 @@
             $("#headerImage").attr("src", data.image_url);
             $("#restaurantRating").attr("src", data.rating_img_url);
             $("#restaurantRating").attr("alt", (data.rating + " " + "stars"));
-            $("#userComment").html(data.snippet_text);
+            $("#phoneNum").html(data.display_phone);
+            $("#phoneNum").attr("href", ("tel://" + data.phone));
+            $("#yelpLink").attr("href", data.mobile_url);
+            $("#userComment").html("\"" + data.snippet_text + "\"");
             
             // Find the h1 element in our header and inject the name of
             // the category into it.
