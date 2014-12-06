@@ -10,7 +10,8 @@
 <body>
     <?php 
         include "preferences.php";
-        include "main.php"
+        include "main.php";
+        include "details.php"
     ?>
   <div data-role="page" id="mainPage">
     <?php include "menu.php" ?>  

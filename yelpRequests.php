@@ -126,7 +126,7 @@ if ($_GET["action"] == "search") {
     echo search($_GET["searchTerm"], $_GET["location"]);
     
 } else {
-    // This is to get a specific business.
+    echo get_business($_GET["id"]);
 }
 
 ?>

@@ -9,7 +9,6 @@
 <div data-role="header">
     <a href="#mainMenu" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">Main Menu</a>
     <h1>iEatFood</h1>
-    <a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Search</a>
     <a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Filter</a>
 
 </div>
