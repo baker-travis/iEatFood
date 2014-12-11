@@ -33,6 +33,7 @@
         </form>
     </div>
 	<script>
+        
 		function saveFields() {
 			localStorage.removeItem("name");
 			localStorage.removeItem("email");

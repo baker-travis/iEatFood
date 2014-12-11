@@ -9,6 +9,9 @@
         <ul data-role="listview" data-inset="true" id="restaurants"></ul>
         
     </div>
+    <div data-role="footer">
+        <h1>Powered by Yelp&copy;</h1>
+    </div>
     <script>
         var latitude;
         var longitude;
@@ -51,7 +54,7 @@
             var restaurantList = "";
         
             for (var i = 0; i < data.length; i++) {
-                restaurantList += "<li><a href=\"#details?id=" + data[i].id + "\">";
+                restaurantList += "<li><a href=\"#details?id=" + data[i].id + "\" data-transition=\"slide\">";
                 restaurantList += "<img src=\"" + data[i].image_url + "\">";
                 restaurantList += "<h2>" + data[i].name + "</h2>";
                 restaurantList += "<p>" + data[i].location.display_address[0] + "<br />" + data[i].location.display_address[1] + "</p>";

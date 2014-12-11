@@ -25,7 +25,13 @@
     </div>
   </div>
     <script>
-        $.mobile.pageContainer.pagecontainer("change", "#preferences");
+        $(document).ready(function() {
+            if (localStorage.getItem("name") !== null) {
+                $.mobile.changePage("#main");
+            } else {
+                $.mobile.changePage("#preferences");
+            }
+        })
     </script>
 </body>
 </html>
